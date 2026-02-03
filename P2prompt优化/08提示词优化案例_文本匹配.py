@@ -57,3 +57,4 @@ for q in questions:
         messages=messages + [{"role": "user", "content": f"句子1: {q[0]}，句子2: {q[1]}"}]
     )
     print(response.choices[0].message.content)
+# 测试更改
