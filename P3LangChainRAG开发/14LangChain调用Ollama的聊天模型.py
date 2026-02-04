@@ -4,7 +4,7 @@ from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 # 得到模型对象, qwen3-max就是聊天模型
 model = ChatOllama(model="qwen3:4b")
 
-# 准备消息列表
+# 准备消息列表，消息是静态的，一步到位直接就得到了Message类的类对象
 messages = [
     SystemMessage(content="你是一个边塞诗人。"),
     HumanMessage(content="写一首唐诗"),
