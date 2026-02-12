@@ -31,3 +31,4 @@ if uploader_file is not None:
 
     # get_value -> bytes -> decode('utf-8')
     text = uploader_file.getvalue().decode("utf-8")
+    st.write(text)
